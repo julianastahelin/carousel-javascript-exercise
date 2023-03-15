@@ -4,46 +4,75 @@ body {
 
 .slider-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     position: relative;
-}
-
-.slider-container .seta {
-    position: absolute;
-    height: 50px; 
-    top: 312px;
-}
-.slider-container .seta:hover {
-    opacity: 80%;
-}
-
-.slider-container .seta-esquerda {
-    left: 70px;
-}
-
-.slider-container .seta-direita {
-    right: 70px;
+    height: 100vh;
 }
 
 .slide {
     position: absolute;
     top: 0;
+    opacity: 0;
+    /*ADICIONANDO */
+    transition: 0.5s ease-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
 }
 
-.slide .slide-image {
-    width: 1200px;
+.slide.show {
+    opacity: 1;
+}
+
+.slide.slide-1 {
+    background-image: url(../images/image-1.png);
+}
+
+.slide.slide-2 {
+    background-image: url(../images/image-2.png);
+}
+
+.slide.slide-3 {
+    background-image: url(../images/image-3.png);
+}
+
+.slide.slide-4 {
+    background-image: url(../images/image-4.png);
+}
+
+.slider-container .seta {
+    position: absolute;
+    height: 50px;
+    cursor: pointer;
+}
+
+.slider-container .seta:hover {
+    opacity: 80%;
+}
+
+.slider-container .seta-esquerda {
+    left: 4%;
+}
+
+.slider-container .seta-direita {
+    right: 4%;
+}
+
+.slider-container .seta.inactive, .slider-container .seta.inactive:hover {
+    opacity: 50%;
+    cursor: auto;
 }
 
 .slide .text-container {
     background-color: #fff;
     width: 380px;
-    height: 450px;
     border-radius: 10px;
-    position: absolute;
-    top: 110px;
-    left: 100px;
+    margin-left: 12%;
     padding: 45px 40px;
 }
 
@@ -63,17 +92,20 @@ body {
 .slide .text-container .saiba-mais {
     font-weight: 700;
     font-size: 18px;
+}
+
+.slide-1 .text-container .saiba-mais {
     color: #C50000;
 }
 
-/* .slide.slide-2, .slide.slide-3, .slide.eslide-4 {
-    display:none;
-} */
+.slide-2 .text-container .saiba-mais {
+    color: #D9DD10;
+}
 
-/* .visible { 
-    display: block;
-} */
+.slide-3 .text-container .saiba-mais {
+    color: #A63A17;
+}
 
-.hide {
-    display: none;
+.slide-4 .text-container .saiba-mais {
+    color: #10ACDD;
 }
