@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-container .seta {
+    position: absolute;
+    height: 50px; 
+    top: 312px;
+}
+.slider-container .seta:hover {
+    opacity: 80%;
+}
+
+.slider-container .seta-esquerda {
+    left: 70px;
+}
+
+.slider-container .seta-direita {
+    right: 70px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+}
+
+.slide .slide-image {
+    width: 1200px;
+}
+
+.slide .text-container {
+    background-color: #fff;
+    width: 380px;
+    height: 450px;
+    border-radius: 10px;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    padding: 45px 40px;
+}
+
+.slide .text-container .slide-title {
+    padding-bottom: 50px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.slide .text-container .slide-text {
+    padding-bottom: 30px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.slide .text-container .saiba-mais {
+    font-weight: 700;
+    font-size: 18px;
+    color: #C50000;
+}
+
+/* .slide.slide-2, .slide.slide-3, .slide.eslide-4 {
+    display:none;
+} */
+
+/* .visible { 
+    display: block;
+} */
+
+.hide {
+    display: none;
+}
