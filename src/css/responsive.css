@@ -17,11 +17,11 @@
         line-height: 18px;
     }
 
-    .slide .text-container .saiba-mais {
+    .slide .text-container .know-more {
         font-size: 16px;
     }
 
-    .slider-container .seta {
+    .slider-container .arrow {
         height: 45px;
         width: 28px;
     }
@@ -45,11 +45,11 @@
         line-height: 17px;
     }
 
-    .slide .text-container .saiba-mais {
+    .slide .text-container .know-more {
         font-size: 15px;
     }
 
-    .slider-container .seta {
+    .slider-container .arrow {
         height: 40px;
         width: 25px;
     }

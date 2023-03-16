@@ -13,7 +13,6 @@ body {
     position: absolute;
     top: 0;
     opacity: 0;
-    /*ADICIONANDO */
     transition: 0.5s ease-out;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,7 +21,6 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: black;
 }
 
 .slide.show {
@@ -45,25 +43,25 @@ body {
     background-image: url(../images/image-4.png);
 }
 
-.slider-container .seta {
+.slider-container .arrow {
     position: absolute;
     height: 50px;
     cursor: pointer;
 }
 
-.slider-container .seta:hover {
+.slider-container .arrow:hover {
     opacity: 80%;
 }
 
-.slider-container .seta-esquerda {
+.slider-container .previous-arrow {
     left: 4%;
 }
 
-.slider-container .seta-direita {
+.slider-container .next-arrow {
     right: 4%;
 }
 
-.slider-container .seta.inactive, .slider-container .seta.inactive:hover {
+.slider-container .arrow.inactive, .slider-container .arrow.inactive:hover {
     opacity: 50%;
     cursor: auto;
 }
@@ -89,23 +87,23 @@ body {
     line-height: 20px;
 }
 
-.slide .text-container .saiba-mais {
+.slide .text-container .know-more {
     font-weight: 700;
     font-size: 18px;
 }
 
-.slide-1 .text-container .saiba-mais {
+.slide-1 .text-container .know-more {
     color: #C50000;
 }
 
-.slide-2 .text-container .saiba-mais {
+.slide-2 .text-container .know-more {
     color: #D9DD10;
 }
 
-.slide-3 .text-container .saiba-mais {
+.slide-3 .text-container .know-more {
     color: #A63A17;
 }
 
-.slide-4 .text-container .saiba-mais {
+.slide-4 .text-container .know-more {
     color: #10ACDD;
 }
